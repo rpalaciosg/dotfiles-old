@@ -1,0 +1,171 @@
+{
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "window.zoomLevel": 0,
+  "editor.fontFamily": "Fira Code iScript,Fira Code,'Operator Mono Light','OperatorMonoSS-Light','Operator Mono','Monaco','Droid Sans Mono','Catograph Mono','DejaVu Sans Mono','Source Code Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "files.autoSave": "onFocusChange",
+  "cSpell.language": "en,es,es-ES",
+  "node-module-intellisense.autoStripExtensions": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".d.ts",
+    ".tsx",
+    ".vue",
+    ".json"
+  ],
+  "editor.renderIndentGuides": false,
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    ["#cc241d", "#b16286", "#458588", "#689d6a", "#98971a", "#d79921"],
+    "#f2e5bc"
+  ],
+  "editor.fontLigatures": true,
+  "sync.gist": "5ac197eb42bfd2a56a76345c7428efe7",
+  "editor.formatOnPaste": false,
+  //"editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.fontSize": 15,
+  "eslint.autoFixOnSave": true,
+  "files.eol": "\n",
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": false,
+  "beautify.language": {
+    "js": {
+      "type": [],
+      "filename": []
+    },
+    "css": [],
+    "html": [
+      "htm",
+      "html",
+      "php",
+      "erb",
+      "django-html"
+    ]
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 10,
+  "breadcrumbs.enabled": true,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "easy-icons",
+  "files.associations": {
+    "**/templates/*.html": "django-html",
+    "**/templates/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "razor": "html",
+    "plaintext": "jade",
+    "xml": {
+      "attr_quotes": "single"
+    }
+  },
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "auto-close-tag.SublimeText3Mode": true,
+  "cSpell.userWords": [
+    "Preformateado",
+    "Quix",
+    "Reactjs",
+    "antipatron",
+    "bootcamp",
+    "dinamicamente",
+    "keepcoding",
+    "milisegundos",
+    "preformateados",
+    "preformatear",
+    "regarlo",
+    "subsecciones",
+    "superheroe",
+    "tabulación"
+  ],
+  "terminal.external.linuxExec": "hyper",
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "rest-client.fontSize": 12,
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "editor.tabSize": 2,
+  "monokaiPro.fileIconsMonochrome": true
+  /*       "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+          "Gold",
+          "Orchid",
+          "LightSkyBlue"
+        ],
+        "Red"
+      ] */
+}
