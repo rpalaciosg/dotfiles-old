@@ -1,4 +1,4 @@
-#dotfiles
+# dotfiles
 
 Que configuraciones uso?
 
