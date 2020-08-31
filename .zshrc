@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="/home/richard/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -13,7 +13,7 @@ ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -65,11 +65,11 @@ ZSH_THEME="spaceship"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras web-search zsh-autosuggestions autojump coloured-man-pages colorize extract zsh-syntax-highlighting vscode npm docker)
+plugins=(git docker docker-compose node npm extract z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,9 +98,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /home/richard/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+fpath=( "$HOME/.zfunctions" $fpath )
+alias l='colorls --group-directories-first --almost-all'
+alias ll='colorls --group-directories-first --almost-all --long' # detailed list view
 
 #SPACESHIP:
   # Set Spaceship ZSH as a prompt
   autoload -Uz promptinit; promptinit
   prompt spaceship
+
+# firefox-developer-edition
+#export PATH=/opt/firefox/firefox:$PATH
+
+source /home/richard/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+### Fix for making Docker plugin work
+autoload -U compinit && compinit
+###
+
+### Allow the use of the z plugin to easily navigate directories
+. /etc/profile.d/z.sh
+
+### Kitty terminal
+autoload -Uz compinit
+compinit
+# Completion for Kitty
+kitty + complete setup zsh | source /dev/stdin
