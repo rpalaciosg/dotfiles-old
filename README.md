@@ -42,6 +42,7 @@ make symlinks
 ## Herramientas usadas
 
 - [kitty](https://sw.kovidgoyal.net/kitty/) un emulador de terminal basado en GPU.
+- [Kitty-themes](https://github.com/dexpota/kitty-themes) una colección de temas para kitty terminal.
 - [zsh + ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) como shell por defecto
 - [Nerd-fonts](https://github.com/ryanoasis/nerd-fonts) para que caracteres de fuentes parcheadas tengan un bue aspecto (Yo uso [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode))
 - Ademas uso [JetBrains Mono](https://www.jetbrains.com/lp/mono/) y [Cascadia Code](https://github.com/microsoft/cascadia-code) ambas tienen soporte con ligaduras.
