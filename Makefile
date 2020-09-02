@@ -5,6 +5,8 @@ install:
 
 	mkdir -p .config/kitty
 
+	./scripts/zsh.sh
+
 symlinks:
 	ln -sf `pwd`/.zshrc ~/.zshrc
 	ls -sf `pwd`/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
