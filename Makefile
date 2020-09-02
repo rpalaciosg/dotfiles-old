@@ -8,6 +8,8 @@ install:
 	./scripts/kitty.sh
 
 symlinks:
+	ln -sf `pwd`/gitconfig ~/.gitconfig
+	ln -sf `pwd`/gitignore ~/.gitignore
 	ln -sf `pwd`/.zshrc ~/.zshrc
 	ls -sf `pwd`/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 	ls -sf `pwd`/config/kitty/theme.conf ~/.config/kitty/theme.conf
