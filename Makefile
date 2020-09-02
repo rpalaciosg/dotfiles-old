@@ -1,12 +1,11 @@
 install:
 	sudo apt install -y \
-		zsh \
-		kitty
-
-	mkdir -p .config/kitty
+		zsh \	
+		git
 
 	./scripts/zsh.sh
 	./scripts/fonts.sh
+	./scripts/kitty.sh
 
 symlinks:
 	ln -sf `pwd`/.zshrc ~/.zshrc
