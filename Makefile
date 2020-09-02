@@ -6,6 +6,7 @@ install:
 	mkdir -p .config/kitty
 
 	./scripts/zsh.sh
+	./scripts/fonts.sh
 
 symlinks:
 	ln -sf `pwd`/.zshrc ~/.zshrc
