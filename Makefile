@@ -16,4 +16,4 @@ symlinks:
 				
 .PHONY: install symlinks
 
-.ALL: install symlinks
+.ALL: install symlinks ALL
