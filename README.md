@@ -31,6 +31,9 @@ make install
 # 2 statement de creación de enlaces simbólicos
 make symlinks
 ```
+### Kitty
+
+![kitty](images/kitty.png)
 
 ## Probar con docker
 
@@ -42,4 +45,4 @@ make symlinks
 - [zsh + ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) como shell por defecto
 - [Nerd-fonts](https://github.com/ryanoasis/nerd-fonts) para que caracteres de fuentes parcheadas tengan un bue aspecto (Yo uso [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode))
 - Ademas uso [JetBrains Mono](https://www.jetbrains.com/lp/mono/) y [Cascadia Code](https://github.com/microsoft/cascadia-code) ambas tienen soporte con ligaduras.
-- ..
+- ...
