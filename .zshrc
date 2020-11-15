@@ -122,8 +122,11 @@ autoload -U compinit && compinit
 ### Allow the use of the z plugin to easily navigate directories
 . /etc/profile.d/z.sh
 
+
 ### Kitty terminal
 autoload -Uz compinit
 compinit
 # Completion for Kitty
 kitty + complete setup zsh | source /dev/stdin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
