@@ -36,6 +36,10 @@ make symlinks
 
 ![kitty](images/kitty.png)
 
+### NVIM
+
+![Neovim](images/nvim_conf.png)
+
 ## Probar con docker
 
 > Muy pronto cargare la imagen y pasos para hacerlo
