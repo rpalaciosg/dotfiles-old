@@ -61,7 +61,7 @@ set background=dark  " Fondo del tema: light o dark
 " Tema
 "packadd! dracula
 syntax enable
-colorscheme dracula " Nombre del tema
+"colorscheme dracula " Nombre del tema
 colorscheme synthwave84 " Tema synthwave84
 
 " EMMET-VIM
