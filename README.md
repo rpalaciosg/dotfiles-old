@@ -2,9 +2,9 @@
 
 **Que configuraciones uso?**
 
-Estas son las configuraciones para las apps, editores y linters que uso en mi espacio de trabajo específicamente linux (PopOS! distro basada en ubuntu).
+Estas son las configuraciones para las apps, editores y linters que uso en mi espacio de trabajo específicamente linux (uso la distro [PopOS!](https://pop.system76.com/) de system76 basada en ubuntu).
 
-## Si deseas probarlos:
+## Si deseas probar mis configuraciones:
 
 - Clona este repo en tu home, por ejemplo
 
@@ -32,11 +32,13 @@ make install
 make symlinks
 
 ```
+
+## Capturas de Pantalla
 ### Kitty
 
 ![kitty](images/kitty.png)
 
-### NVIM
+### Neovim
 
 ![Neovim](images/nvim_conf.png)
 
@@ -49,6 +51,7 @@ make symlinks
 - [kitty](https://sw.kovidgoyal.net/kitty/) un emulador de terminal basado en GPU.
 - [Kitty-themes](https://github.com/dexpota/kitty-themes) una colección de temas para kitty terminal.
 - [zsh + ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) como shell por defecto
-- [Nerd-fonts](https://github.com/ryanoasis/nerd-fonts) para que caracteres de fuentes parcheadas tengan un bue aspecto (Yo uso [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode))
-- Ademas uso [JetBrains Mono](https://www.jetbrains.com/lp/mono/) y [Cascadia Code](https://github.com/microsoft/cascadia-code) ambas tienen soporte con ligaduras.
+- [Nerd-fonts](https://github.com/ryanoasis/nerd-fonts) para que caracteres de fuentes parcheadas tengan un bue aspecto (Actualmente estoy usando [Cascadia Code](https://github.com/microsoft/cascadia-code) de su repo original la variante `PL` antes usaba FiraCode)
+- Ademas uso [JetBrains Mono](https://www.jetbrains.com/lp/mono/) y [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) ambas tienen soporte con ligaduras.
+- [Neovim](https://neovim.io/) como editor de texto y código con el tema [synthwave84](https://github.com/artanikin/vim-synthwave84) el cual también uso en VSCode.
 - ...
