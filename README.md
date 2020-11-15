@@ -30,6 +30,7 @@ o
 make install
 # 2 statement de creación de enlaces simbólicos
 make symlinks
+
 ```
 ### Kitty
 
