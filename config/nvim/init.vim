@@ -33,6 +33,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " For func argument completion
   Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
+  Plug 'ervandew/supertab'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
   "Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
@@ -115,6 +116,9 @@ augroup deopleteCompleteDoneAu
   autocmd CompleteDone * silent! pclose!
 augroup END
 
+" Supertab - Invertir direccion de navegacion (de arriba a abajo)
+let g:SuperTabDefaultCompletionType = '<c-n>'
+
 "FZF
 " Ejecutar comandos con alt-enter :Commands
 let g:fzf_commands_expect = 'alt-enter'
@@ -152,4 +156,4 @@ nnoremap <leader>e :e ~/.config/nvim/init.vim<CR>  " Abrir el archivo init.vim c
 
 " Abrir/Cerrar NERDTree con F2
 map <F2> :NERDTreeToggle<CR>
-"
+" Ctrl + ww -> Cambiar entre ventanas (NERDTree y tu buffer actual) 
