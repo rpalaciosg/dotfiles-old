@@ -38,7 +38,11 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
   Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
-Plug 'haya14busa/incsearch.vim' "  Búsqueda incremental mejorada.
+  Plug 'haya14busa/incsearch.vim' "  Búsqueda incremental mejorada.
+  Plug 'tpope/vim-surround' " Facilita poner/quitar/cambiar comillas, paréntesis, tags, etc sobre un texto.
+  Plug 'tpope/vim-repeat' " Repetir acciones de plugins con signo '.'
+  Plug 'tpope/vim-eunuch' " Provee comandos de sistemas UNIX
+  Plug 'scrooloose/nerdcommenter' " Facilita agregar y quitar comentarios
   Plug 'jiangmiao/auto-pairs' " Inserta pares de comillas y parentesis
   Plug 'scrooloose/nerdcommenter' " Facilita agregary quitar comentarios
   Plug 'airblade/vim-gitgutter' " Muestra cambios hechos en el archivon la columna signos
