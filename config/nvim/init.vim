@@ -22,6 +22,17 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'vim-airline/vim-airline'  " Barra de estado
   Plug 'vim-airline/vim-airline-themes'  " Temas para airline
   Plug 'Yggdroot/indentLine'  " Muestra niveles de identacion con lineas verticales
+  "  Nvim-Typescript completion with deoplete
+  " # REQUIRED: Add a syntax file. YATS is the best
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'Shougo/neco-syntax'  " Fuente general de auto completado
+  Plug 'Shougo/denite.nvim' " For Denite features
+  Plug 'wokalski/autocomplete-flow' " Javascript autocomplete-flow
+  " For func argument completion
+  Plug 'Shougo/neosnippet'
+  Plug 'Shougo/neosnippet-snippets'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
   "Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
@@ -61,7 +72,7 @@ set background=dark  " Fondo del tema: light o dark
 " Tema
 "packadd! dracula
 syntax enable
-"colorscheme dracula " Nombre del tema
+" colorscheme dracula " Nombre del tema
 colorscheme synthwave84 " Tema synthwave84
 
 " EMMET-VIM
@@ -91,6 +102,18 @@ set noshowmode  " No mostrar el modo actual (ya lo muestra la barra de estado)
 " No mostrar en ciertos tipos de buffers y archivos
 let g:indentLine_fileTypeExclude = ['text', 'sh', 'help', 'terminal']
 let g:indentLine_bufNameExclude = ['NERD_tree.*', 'term:.*']
+
+" Activar deoplete al iniciar Neovim
+let g:deoplete#enable_at_startup = 1
+" neosnippet
+let g:neosnippet#enable_completed_snippet = 1
+let g:autocomplete_flow#insert_paren_after_function = 0
+
+" Cerrar automaticamente la ventana de vista previa (donde se muestra documentación, si existe)
+augroup deopleteCompleteDoneAu
+  autocmd!
+  autocmd CompleteDone * silent! pclose!
+augroup END
 
 "FZF
 " Ejecutar comandos con alt-enter :Commands
@@ -129,4 +152,4 @@ nnoremap <leader>e :e ~/.config/nvim/init.vim<CR>  " Abrir el archivo init.vim c
 
 " Abrir/Cerrar NERDTree con F2
 map <F2> :NERDTreeToggle<CR>
-" Ctrl + ww -> Cambiar entre ventanas (NERDTree y tu buffer actual) 
+"
