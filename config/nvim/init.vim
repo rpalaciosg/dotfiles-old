@@ -17,7 +17,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     \ 'do': 'make install'
     \}
   Plug 'scrooloose/nerdtree'  " Explorador de archivos, util para verla estructura del proyecto
-  Plug 'xuyuanp/nerdtree-git-plugin'  " Muestra el estado de los archivos en Nerdtree
   Plug 'ryanoasis/vim-devicons' " Aniade iconos a plugins lo uso para iconos a NERDTree
   Plug 'vim-airline/vim-airline'  " Barra de estado
   Plug 'vim-airline/vim-airline-themes'  " Temas para airline
@@ -45,8 +44,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'scrooloose/nerdcommenter' " Facilita agregar y quitar comentarios
   Plug 'jiangmiao/auto-pairs' " Inserta pares de comillas y parentesis
   Plug 'scrooloose/nerdcommenter' " Facilita agregary quitar comentarios
+  Plug 'tpope/vim-fugitive' " Provee comandos de git.
   Plug 'airblade/vim-gitgutter' " Muestra cambios hechos en el archivon la columna signos
   Plug 'mattn/emmet-vim'  " emmet para vim
+  Plug 'xuyuanp/nerdtree-git-plugin'  " Muestra el estado de los archivos en Nerdtree
   call plug#end()
 
 " Connfiguraciones
