@@ -38,6 +38,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
   Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
+Plug 'haya14busa/incsearch.vim' "  Búsqueda incremental mejorada.
   Plug 'jiangmiao/auto-pairs' " Inserta pares de comillas y parentesis
   Plug 'scrooloose/nerdcommenter' " Facilita agregary quitar comentarios
   Plug 'airblade/vim-gitgutter' " Muestra cambios hechos en el archivon la columna signos
@@ -160,6 +161,13 @@ let g:mapleader = ' ' " Definir espacio como la tecla lider
 nnoremap <leader>s :w<CR> " Guardar con <lider> + s
 
 nnoremap <leader>e :e ~/.config/nvim/init.vim<CR>  " Abrir el archivo init.vim con <lider> + e
+
+" Incsearch - Maps requeridos
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+
+" Quitar resaltado luego de buscar
+let g:incsearch#auto_nohlsearch = 1
 
 " Abrir/Cerrar NERDTree con F2
 map <F2> :NERDTreeToggle<CR>
