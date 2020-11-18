@@ -34,6 +34,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
   Plug 'ervandew/supertab'
+  Plug 'Shougo/echodoc.vim'   " Muestra la firma de la función.
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
   "Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
@@ -118,6 +119,12 @@ augroup END
 
 " Supertab - Invertir direccion de navegacion (de arriba a abajo)
 let g:SuperTabDefaultCompletionType = '<c-n>'
+
+" Echodoc
+set noshowmode  " No mostrar el modo actual (echodoc hace uso de este espacio)
+
+" Activar echodoc al iniciar Neovim
+let g:echodoc_enable_at_startup = 1
 
 "FZF
 " Ejecutar comandos con alt-enter :Commands
