@@ -37,7 +37,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Shougo/echodoc.vim'   " Muestra la firma de la función.
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Wrapper de FZF buscador de archivos, buffers, grep, etc
   Plug 'junegunn/fzf.vim' " Buscador FZF de archivos
-  "Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
+  Plug 'ctrlpvim/ctrlp.vim' " Buscador de archivos y buffers
   Plug 'jiangmiao/auto-pairs' " Inserta pares de comillas y parentesis
   Plug 'scrooloose/nerdcommenter' " Facilita agregary quitar comentarios
   Plug 'airblade/vim-gitgutter' " Muestra cambios hechos en el archivon la columna signos
