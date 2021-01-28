@@ -15,3 +15,12 @@ excludesfile = ~/.gitignore
         ui = auto
 [hub]
 protocol = https
+[alias]
+        st = status
+        d = diff
+        co = checkout
+        c = commit
+        cm = commit -m
+        ca = commit -a
+        br = branch
+        l = log --graph --decorate --all
