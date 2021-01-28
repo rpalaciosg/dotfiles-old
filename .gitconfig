@@ -14,7 +14,9 @@ excludesfile = ~/.gitignore
         grep = auto
         ui = auto
 [hub]
-protocol = https
+	protocol = https
+[github]
+        user = rpalaciosg
 [alias]
         st = status
         d = diff
