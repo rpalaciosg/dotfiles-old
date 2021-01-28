@@ -21,8 +21,15 @@ excludesfile = ~/.gitignore
         st = status
         d = diff
         co = checkout
+        sw = switch
+        cob = checkout -b
+        swc = switch -c
         c = commit
         cm = commit -m
         ca = commit -a
-        br = branch
-        l = log --graph --decorate --all
+        b = branch
+        ll = log --graph --decorate --name-status --all
+        l = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all
+        pl = pull
+        ps = push
+        alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
