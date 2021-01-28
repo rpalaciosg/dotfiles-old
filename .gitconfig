@@ -5,6 +5,13 @@
         defaultBranch = main
 [core]
 excludesfile = ~/.gitignore
-
+[color]
+        status = auto
+        branch = auto
+        interactive = auto
+        branch = auto
+        diff = auto
+        grep = auto
+        ui = auto
 [hub]
 protocol = https
