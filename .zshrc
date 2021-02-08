@@ -96,11 +96,13 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
+# MY-ALIASESES
+  alias zshconfig="nvim ~/.zshrc"
+  alias ohmyzsh="nvim ~/.oh-my-zsh"
+  alias vim=nvim
+  alias g=git
+  alias init-cz="commitizen init cz-conventional-changelog --save-dev --save-exact"
+  alias view-on-gitub=$'xdg-open `git config --get remote.origin.url | awk \'/git@github.com:/ { sub(/git@github.com:/, "https://github.com/") }; { print }\'`'
 fpath=( "$HOME/.zfunctions" $fpath )
 alias l='colorls --group-directories-first --almost-all'
 alias ll='colorls --group-directories-first --almost-all --long' # detailed list view
