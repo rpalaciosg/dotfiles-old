@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
   alias l='colorls --group-directories-first --almost-all --gs -t'
   alias ll='colorls --group-directories-first --almost-all --long --gs -t' # detailed list view
   alias cat=bat
+  alias npm='npq-hero'
 #SPACESHIP:
   # Set Spaceship ZSH as a prompt
   autoload -Uz promptinit; promptinit
