@@ -4,7 +4,8 @@ install:
 		xclip \
 		git \
 		tldr \
-		bat
+		bat \
+		peco
 		
 
 	./scripts/colorls.sh
