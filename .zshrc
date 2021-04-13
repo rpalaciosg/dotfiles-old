@@ -101,12 +101,12 @@ source $ZSH/oh-my-zsh.sh
   alias ohmyzsh="nvim ~/.oh-my-zsh"
   alias vim=nvim
   alias g=git
-  alias init-cz="commitizen init cz-conventional-changelog --save-dev --save-exact"
+  alias cz-friendly="commitizen init cz-conventional-changelog --save-dev --save-exact"
   alias view-on-gitub=$'xdg-open `git config --get remote.origin.url | awk \'/git@github.com:/ { sub(/git@github.com:/, "https://github.com/") }; { print }\'`'
-fpath=( "$HOME/.zfunctions" $fpath )
-alias l='colorls --group-directories-first --almost-all'
-alias ll='colorls --group-directories-first --almost-all --long' # detailed list view
-
+  fpath=( "$HOME/.zfunctions" $fpath )
+  alias l='colorls --group-directories-first --almost-all --gs -t'
+  alias ll='colorls --group-directories-first --almost-all --long --gs -t' # detailed list view
+  alias cat=bat
 #SPACESHIP:
   # Set Spaceship ZSH as a prompt
   autoload -Uz promptinit; promptinit
@@ -130,5 +130,13 @@ autoload -Uz compinit
 compinit
 # Completion for Kitty
 kitty + complete setup zsh | source /dev/stdin
+
+# Powerline
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+  powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+  source /usr/share/powerline/bindings/bash/powerline.sh
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
