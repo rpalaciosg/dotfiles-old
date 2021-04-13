@@ -19,6 +19,7 @@ excludesfile = ~/.gitignore
         user = rpalaciosg
 [alias]
         st = status
+	a = add
         d = diff
         co = checkout
         sw = switch
@@ -27,9 +28,11 @@ excludesfile = ~/.gitignore
         c = commit
         cm = commit -m
         ca = commit -a
-        b = branch
-        ll = log --graph --decorate --name-status --all
-        l = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all
+        b = branch       
+	l = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all
+	ll = log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative
+	hi = "!git l | peco | awk '{print $2}' | xargs -I {} git diff {}^ {}"
         pl = pull
+	plr = pull --rebase
         ps = push
         alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
