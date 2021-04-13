@@ -2,13 +2,19 @@ install:
 	sudo apt install -y \
 		zsh \	
 		xclip \
-		git
+		git \
+		tldr \
+		bat
+		
 
-
+	./scripts/colorls.sh
 	./scripts/zsh.sh
 	./scripts/fonts.sh
 	./scripts/kitty.sh
 	./scripts/nvim.sh
+
+colorls:
+	sudo gem install colorls
 
 symlinks:
 	ln -sf `pwd`/gitconfig ~/.gitconfig
