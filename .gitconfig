@@ -4,7 +4,7 @@
 [init]
         defaultBranch = main
 [core]
-excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [color]
         status = auto
         branch = auto
@@ -28,10 +28,11 @@ excludesfile = ~/.gitignore
         c = commit
         cm = commit -m
         ca = commit -a
-        b = branch       
-	l = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all
-	ll = log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative
-	hi = "!git l | peco | awk '{print $2}' | xargs -I {} git diff {}^ {}"
+        b = branch       	
+	l = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --date=relative --decorate --all
+	ll = log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all	
+	la = log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative	
+	hi = "! git l | peco | awk '{print $1}' | xargs -I {} git diff {}^ {}"
         pl = pull
 	plr = pull --rebase
         ps = push
