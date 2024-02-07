@@ -1,0 +1,304 @@
+// Place your key bindings in this file to override the defaults
+[
+  //keybindings generales para simplificar la apariencia de VSCODE
+  //Quitar activitybar
+ {
+   "key": "ctrl+shift+1",
+   "command": "workbench.action.toggleActivityBarVisibility"
+ },
+  //Poner el foco en el side bar del explorador
+  {
+    "key": "ctrl+1",
+    "command":"workbench.action.focusSideBar"
+  },
+  //Ocultar el sidebar si el foco ya esta en el sidebar
+  {
+    "key": "ctrl+1",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarFocus"
+  },
+  //Usar enter para abrir ficheros dentro del sidebar
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "sideBarFocus"
+  },
+  //Volver el foco al editor cuando no este dentro del editor
+  {
+   "key": "escape",
+   "command": "workbench.action.focusActiveEditorGroup",
+   "when": "!editorTextFocus"
+  },
+  //Crear un fichero nuevo en donde me encuentre en el explorador
+  //verificar si me sirve xq hay un plugin que me permite hacerlo mas facil y estaria usando
+  //el mismo shortcut, la ventaja es que no necesitaria un plugin
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  //Crear una nueva carpeta en donde me encuentre en el explorador
+  //verificar si me sirve xq hay un plugin que me permite hacerlo mas facil
+  {
+    "key": "ctrl+alt+p",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  //Toggle statusBar
+  {
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  //Mostrar la terminal
+  {
+    "key": "ctrl+alt+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  //Quitar o mutear notificaciones
+  {
+    "key": "ctrl+alt+m",
+    "command": "notifications.clearAll"
+  },
+  //Duplicar una linea en el editor
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //Duplicar texto seleccionado
+  {
+    "key": "ctrl+alt+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  // Mover linea hacia arriba
+  {
+    "key": "shift+alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // funciona tambien el Alt + up
+  // Mover linea hacia abajo
+  {
+    "key": "shift+alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // funciona tambien el Alt + down
+
+  //VIM
+  // Ir al siguiente editor
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  // Ir al editor previo
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  // Mover foco a la siguiente sugerencia
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  // Mover foco a la sugerencia previa
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  // Hover de una linea
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  // Activar o desactivar VIM
+  // {
+  //   "key": "ctrl+alt+v",
+  //   "command": "toggleVim"
+  // },
+  //{
+  //  "key": "ctrl+n",
+  //  "command": "extension.advancedNewFile"
+  //},
+  // Cerrar editor activo
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  // Mostrar los editores abiertos recientemente
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  // Tener en cuenta para estos 2 keybindings de navegacion la distribucion del teclado
+  // Navegar de regreso donde estuve antes
+  { //en teclado español es ctrl + {, ingles es ctrl+[
+  "key": "ctrl+[",
+  "command": "workbench.action.navigateBack",
+  "when": "canNavigateBack"
+  },
+  // Navegar hacia delante donde estuve antes
+  {//en teclado español es ctrl + }, ingles es ctrl+]
+    "key": "ctrl+]",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  //keybindings para saltar a los test de una clases usando la extension jump to test
+  {
+    "key": "ctrl+shift+t",
+    "command": "extension.jumpToTest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  //Navegar a travez de diferentes ficheros usanod los breadcrumbs
+  // ctrl + shift + .
+
+  //Navegar por los simbolos del fichero
+  // ctrl + shift + o
+
+  // Ir a un numero de linea especifico del archivo
+  // ctrl + G
+
+  // Ir a la definicion de una clase, método, etc de un código
+  // F12, ctrl + F12, shift + F12
+  // Rafa recomienda el shortcut "ctrl + b", pero esto lo usa el plugin neovim para hacer un retroceso
+  //  de página cuando esta activo el editor, seleccionado algun texto y no esta en modo !insert.
+  // Usare Alt + B que no se esta usando
+  //Si uso el ctrl + b recordar que debo desactivar el comando que se usaba antes para postar el sidebar
+  {
+    "key": "ctrl + b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+b",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  // Seleccion smart texto de forma semantica cuando escribimos código
+  // override o desactivo shortcut con comando anterior
+  { "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {//seleccion smart en vim
+    "key": "alt+k",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  // Deseleccion smart de texto de forma semantica cuando escribimos codigo
+  // desactivo shortcut con comando anterior
+  { "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {//deseleccion smart en caso de vim
+    "key": "alt+j",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  // Desactivo este shorcut por el de git
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  // Crear una nueva branch en git antes de hacer commit
+  {
+    "key": "ctrl+shift+b",
+    "command": "git.checkout"
+  },
+
+  //Crear un commit con plugin Conventional Commits de vivaxy
+  {
+    "key": "ctrl+alt+k",
+    "command": "extension.conventionalCommits"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_5",
+    "command": "-workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_5",
+    "command": "-workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_5",
+    "command": "-workbench.action.splitEditorUp"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_5",
+    "command": "workbench.action.splitEditorDown"
+  },
+  // Navegar entre brackets
+  //ctrl+shit+|
+
+  // Multicursor
+  // ctrl+alt+up o ctrl+alt+down
+  //Seleccionar todas las ocurrencias con multicursores
+  // ctrl+shift+L
+
+  // Ver las sugerencias de Quick Fix
+  // ctrl+.
+
+  // Renombrar variables, funciones, clases y sus usos
+  // F2
+
+  // Refactorizar código [extraer codigo como a una funcion o método, constante, etc]
+  // ctrl+shift+r
+
+  // Refactorizar moviendo de clase o archivo a otra carpeta, o cuando cambio nombre de clase
+  // y que se refactorizen los imports y se cambie tambien el nombre del fichero
+  // CTRL+. debo decirle que me la mueva a un nuevo archivo y luego eliminar el último fichero vacio
+
+  // Neovim
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+},
+{
+  "command": "vscode-neovim.compositeEscape2",
+  "key": "k",
+  "when": "neovim.mode == insert && editorTextFocus",
+  "args": "k"
+},
+// Delete Trailing spaces
+{
+  "key": "alt+shift+t",
+  "command": "trailing-spaces.deleteTrailingSpaces",
+  "when": "editorTextFocus"
+},
+
+]
